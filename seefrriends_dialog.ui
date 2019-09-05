@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>seefrriends_dialog</class>
+ <widget class="QDialog" name="seefrriends_dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>474</width>
+    <height>394</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QListWidget" name="listWidget">
+   <property name="geometry">
+    <rect>
+     <x>35</x>
+     <y>21</y>
+     <width>401</width>
+     <height>261</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>300</y>
+     <width>401</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QPushButton" name="seeFriendprofile_button">
+      <property name="text">
+       <string>See Friend's Profile</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="seFriendposts_button">
+      <property name="text">
+       <string>See Friend's Posts</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="removeFriend_button">
+      <property name="text">
+       <string>Remove This Friend</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QPushButton" name="back_button">
+   <property name="geometry">
+    <rect>
+     <x>390</x>
+     <y>360</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Back</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="message_button">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>350</y>
+     <width>131</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Message Friend</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>back_button</sender>
+   <signal>clicked()</signal>
+   <receiver>seefrriends_dialog</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>423</x>
+     <y>371</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>425</x>
+     <y>383</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>removeFriend_button</sender>
+   <signal>clicked()</signal>
+   <receiver>seefrriends_dialog</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>342</x>
+     <y>319</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>344</x>
+     <y>373</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

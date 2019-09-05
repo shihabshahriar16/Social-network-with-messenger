@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>groupsdialogue</class>
+ <widget class="QDialog" name="groupsdialogue">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>414</width>
+    <height>313</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>10</y>
+     <width>241</width>
+     <height>261</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QPushButton" name="gogroup">
+      <property name="text">
+       <string>Go to a group</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="joingroup">
+      <property name="text">
+       <string>Join a group</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="creategroup">
+      <property name="text">
+       <string>Create my own group</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

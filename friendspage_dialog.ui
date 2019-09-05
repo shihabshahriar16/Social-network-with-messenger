@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>friendspage_dialog</class>
+ <widget class="QDialog" name="friendspage_dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>446</width>
+    <height>351</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>60</y>
+     <width>171</width>
+     <height>221</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QPushButton" name="seeFriends_button">
+      <property name="text">
+       <string>See Friends</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="peopleYouMayKow_button">
+      <property name="text">
+       <string>People You May Know</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="makeNewFriend_button">
+      <property name="text">
+       <string>Make A New Friend</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QPushButton" name="back">
+   <property name="geometry">
+    <rect>
+     <x>354</x>
+     <y>302</y>
+     <width>71</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Back</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>back</sender>
+   <signal>clicked()</signal>
+   <receiver>friendspage_dialog</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>391</x>
+     <y>324</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>391</x>
+     <y>345</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>menudialogue</class>
+ <widget class="QDialog" name="menudialogue">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>10</y>
+     <width>291</width>
+     <height>221</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QPushButton" name="signin">
+      <property name="text">
+       <string>signin</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="signup">
+      <property name="text">
+       <string>signup</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>signin</sender>
+   <signal>clicked()</signal>
+   <receiver>menudialogue</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>301</x>
+     <y>71</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>364</x>
+     <y>230</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>signup</sender>
+   <signal>clicked()</signal>
+   <receiver>menudialogue</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>192</x>
+     <y>173</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>326</x>
+     <y>272</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

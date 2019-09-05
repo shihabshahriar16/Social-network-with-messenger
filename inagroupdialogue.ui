@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>inagroupdialogue</class>
+ <widget class="QDialog" name="inagroupdialogue">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>407</width>
+    <height>374</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QTextBrowser" name="textBrowser">
+   <property name="geometry">
+    <rect>
+     <x>35</x>
+     <y>130</y>
+     <width>331</width>
+     <height>192</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>330</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Go back</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>64</x>
+     <y>10</y>
+     <width>271</width>
+     <height>100</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QPushButton" name="post">
+      <property name="text">
+       <string>Post something</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="show">
+      <property name="text">
+       <string>Show members</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="leave">
+      <property name="text">
+       <string>Leave the group</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>inagroupdialogue</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>333</x>
+     <y>351</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>238</x>
+     <y>351</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>leave</sender>
+   <signal>clicked()</signal>
+   <receiver>inagroupdialogue</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>221</x>
+     <y>94</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>371</x>
+     <y>115</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
